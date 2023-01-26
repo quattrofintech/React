@@ -3,6 +3,7 @@ import Escola from './Escola'
 import Nome from "./Nome"
 import Produto from './Produto'
 import Children from './Children'
+import Button from './Button'
 
 
 const Props = () => {
@@ -81,13 +82,16 @@ const Props = () => {
         <div>
             <h2>Props</h2>
             <Nome nome='Gabriel' sobrenome='Oliveira' age={idade}/>
-            <button onClick={() => setIdade(idade + 1)}>Idade</button>
+            {/* <button onClick={() => setIdade(idade + 1)}>Idade</button> */}
+            <Button value='Add Idade' evento={() => setIdade(idade + 1)} classe="green"/>
 
             <br />
 
-            <button onClick={() => setStatus(!status)}>
+            {/* <button onClick={() => setStatus(!status)}>
                 {status ? 'Remover': 'Exibir'}
-            </button>
+            </button> */}
+            <Button value={status ? 'Remover' : 'Exibir'} evento={() => setStatus(!status)} classe="red"/>
+
             {status && <Escola turma={turma} alunos={alunos}/>}
 
 

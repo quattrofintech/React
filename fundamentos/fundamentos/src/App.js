@@ -4,7 +4,7 @@ import './App.css';
 import Condicional from './components/condicional.component/Condicional';
 import Lista from './components/lista.component/Lista';
 import Props from './components/props.component/Props';
-
+import Css from './components/css.component/Index'
 
 function App() {
   return (
@@ -15,6 +15,9 @@ function App() {
       <Lista /> */}
       <h1>Aula de Props 25/01/23</h1>
       <Props />
+      {/* <h1>Aula de CSS 26/01/23</h1>
+      <Css /> */}
+      
     </div>
   );
 }
