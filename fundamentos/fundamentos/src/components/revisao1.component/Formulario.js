@@ -1,3 +1,4 @@
+import './index.css'
 import React, { useState } from 'react'
 
 // Component
@@ -18,7 +19,7 @@ const Formulario = ({nome, email, evento}) => {
     }
 
   return (
-    <form onSubmit={verificarSenha}>
+    <form onSubmit={verificarSenha} className='formulario'>
         <div>
             <label>
                 Nome <br />

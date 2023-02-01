@@ -1,0 +1,51 @@
+.inputs{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+input{
+  font-size: 16px;
+  padding: 5px;
+  margin: 50px 10px;
+}
+
+button{
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px 10px;
+  border: none;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+  width: 60%;
+  margin: auto;
+}
+
+ul li{
+  padding: 5px;
+  background-color: lightgray;
+  margin: 10px auto;
+}
+
+ul li span{
+  margin: 0px 20px;
+}
+
+.realizado{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.realizado button{
+  background-color: rgb(4, 56, 4);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: bold;
+}
