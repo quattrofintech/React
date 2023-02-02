@@ -1,0 +1,25 @@
+header{
+  width: 100%;
+  padding: 0px 20px;
+}
+nav a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+main div{
+  width: 30%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.296);
+  border-radius: 5px;
+  padding: 20px;
+}

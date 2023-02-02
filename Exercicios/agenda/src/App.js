@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState} from 'react'
+
 // Components
 import Adicionar from './components/adicionar.component/Index'
 import Lista from './components/lista.component/Index'
@@ -38,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <Adicionar tarefa={setTextTarefa} data={setTxtData} evento={add}/>
+      <Adicionar tarefa={setTextTarefa} data={setTxtData} evento={add} />
 
       <ul>
         {
@@ -52,7 +53,6 @@ function App() {
             />
           ))
         }
-
       </ul>
     </div>
   );
