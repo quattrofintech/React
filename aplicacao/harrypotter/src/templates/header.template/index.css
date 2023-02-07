@@ -1,0 +1,34 @@
+header{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header img{
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+}
+
+header nav{
+    margin-right: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    transition: all ease-in .5s;
+}
+
+header nav a.active{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
