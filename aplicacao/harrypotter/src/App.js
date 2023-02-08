@@ -1,3 +1,4 @@
+import './App.css'
 // Rotas
 import Routes from './routes'
 

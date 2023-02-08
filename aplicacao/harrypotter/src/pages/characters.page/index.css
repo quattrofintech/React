@@ -20,7 +20,7 @@
 }
 
 .characters .card-character > div:hover{
-    filter:drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    /* filter:drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); */
 }
 
 .characters .card-character div .image{
@@ -46,6 +46,7 @@
    height: 100px;
    padding: 10px 5px;
    margin: auto;
+   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .characters .card-character div .info h3{

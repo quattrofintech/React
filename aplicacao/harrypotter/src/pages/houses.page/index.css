@@ -1,0 +1,33 @@
+.houses{
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.houses .card-house{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 50px;
+}
+
+.houses .card-house:hover > :not(:hover){
+    filter: grayscale(1)
+}
+
+.houses .card-house a{
+    width: 100%;
+    overflow: hidden;
+    transition: all ease-in-out.5s;
+}
+
+.houses .card-house a:hover > img{
+    transform: scale(1.3);
+}
+
+.houses .card-house a img{
+    width: 100%;
+    height: auto;
+    transition: all ease-in-out.5s;
+}
+

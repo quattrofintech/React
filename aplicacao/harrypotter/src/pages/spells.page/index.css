@@ -1,0 +1,39 @@
+.spells{
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.spells .card-spells{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.spells .card-spells div{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: default;
+}
+
+.spells .card-spells div h3{
+    text-align: center;
+}
+
+.spells .card-spells div h2{
+    text-align: center;
+}
+
+.spells .card-spells div p{
+    text-align: justify;
+}
+
+
+
+
