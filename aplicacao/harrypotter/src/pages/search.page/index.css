@@ -1,0 +1,22 @@
+.search > h2{
+    font-size: 3em;
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.search > h3{
+    font-size: 2em;
+    margin: 50px;
+}
+
+.search .list-notfound{
+    width: 70%;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgba(211, 211, 211, 0.46);
+    text-align: center;
+    font-weight: bold;
+}
+

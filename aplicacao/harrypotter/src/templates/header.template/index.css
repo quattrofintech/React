@@ -33,3 +33,28 @@ header nav a.active{
     color: blue;
     border-bottom: 1px solid blue;
 }
+
+header .search{
+    width: auto;
+    overflow: hidden;
+    padding: 5px;
+}
+
+header .search:hover{
+    background-color: rgba(211, 211, 211, 0.469);
+}
+
+header .search input{
+    width: 150px;
+    padding: 2px;
+    font-size: 14px;
+}
+
+header .search button{
+    width: 40px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
