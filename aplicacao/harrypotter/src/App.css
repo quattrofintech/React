@@ -2,3 +2,21 @@ body{
   background-image: url('../public/icon_hp.png');
   background-repeat: repeat;
 }
+
+div#loading {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  animation: loading 0.5s linear infinite;
+  border-bottom: 3px solid black;
+}
+
+@keyframes loading {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}

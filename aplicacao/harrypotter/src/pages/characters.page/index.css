@@ -1,9 +1,9 @@
-.characters{
+.characters {
     width: 100%;
     padding: 20px 0px;
 }
 
-.characters .card-character{
+.characters .card-character {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -11,7 +11,7 @@
     gap: 20px;
 }
 
-.characters .card-character div{
+.characters .card-character div {
     width: 23%;
     height: 400px;
     overflow: hidden;
@@ -19,43 +19,42 @@
     cursor: pointer;
 }
 
-.characters .card-character > div:hover{
+.characters .card-character>div:hover {
     /* filter:drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); */
 }
 
-.characters .card-character div .image{
+.characters .card-character div .image {
     width: 80%;
     height: 300px;
     margin: auto;
 }
 
-.characters .card-character div .image:hover > img{
+.characters .card-character div .image:hover>img {
     transform: scale(1.3);
 }
 
-.characters .card-character div .image img{
-   width: 100%;
-   height: 300px;
-   object-fit: cover;
-   object-position: 0px 0px;
-   transition: all ease-in-out 0.5s;
+.characters .card-character div .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0px 0px;
+    transition: all ease-in-out 0.5s;
 }
 
-.characters .card-character div .info{
-   width: 70%;
-   height: 100px;
-   padding: 10px 5px;
-   margin: auto;
-   background-color: rgba(255, 255, 255, 0.9);
+.characters .card-character div .info {
+    width: 70%;
+    height: 100px;
+    padding: 10px 5px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.characters .card-character div .info h3{
-   text-align: center;
-   line-height: 0%;
+.characters .card-character div .info h3 {
+    text-align: center;
+    line-height: 0%;
 }
 
-.characters .card-character div .info p{
-   text-align: left;
-   line-height: 50%;
+.characters .card-character div .info p {
+    text-align: left;
+    line-height: 50%;
 }
-
