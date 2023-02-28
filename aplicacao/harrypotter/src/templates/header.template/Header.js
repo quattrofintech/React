@@ -1,10 +1,16 @@
 import './index.css'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
+
+// CONTEXTS
+import PageContext from '../../contexts/PageContext'
 
 const Header = () => {
   const [pesquisar, setPesquisar] = useState()
   const navigate = useNavigate()
+
+  // useContext
+  const {page} = useContext(PageContext)
 
   const search = () => {
     if(pesquisar.trim()){
@@ -25,6 +31,7 @@ const Header = () => {
           <button onClick={search}>🔍</button>
         </div>
         <nav>
+            <span>Local /{page}</span>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/characters">Characters</NavLink>
             <NavLink to="/spells">Spells</NavLink>

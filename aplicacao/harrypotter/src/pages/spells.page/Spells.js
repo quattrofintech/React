@@ -1,8 +1,11 @@
 import './index.css'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 // HOOKS
 import { useFetch } from '../../hooks/useFetch'
+
+// CONTEXT
+import PageContext from '../../contexts/PageContext'
 
 // COMPONENTS
 import Card from '../../components/cardSpell.component/CardSpell'
@@ -12,6 +15,10 @@ const Spells = () => {
     // const [spells, setSpells] = useState([])
     const [headers, setHeaders] = useState({})
     const { data: spells, isLoading, error } = useFetch(`${url}/spells`, headers)
+
+    // useContext
+    const {setPage} = useContext(PageContext)
+    useEffect(() => {setPage('Spells')},[])
 
     // useEffect(() => {
     //     const request = async () => {

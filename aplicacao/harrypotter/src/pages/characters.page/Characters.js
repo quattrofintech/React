@@ -1,8 +1,11 @@
 import './index.css'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 // HOOKS
 import { useFetch } from '../../hooks/useFetch'
+
+//CONTEXTS
+import PageContext from '../../contexts/PageContext'
 
 // COMPONENTS
 import CardCharacter from '../../components/cardCharacter.component/CardCharacter'
@@ -29,6 +32,11 @@ const Characters = () => {
   const [headers, setHeaders] = useState({})
   const { data: characters, isLoading, error } = useFetch(`${url}/characters`, headers)
 
+  // useContext
+  const {setPage} = useContext(PageContext)
+
+  useEffect(() => { setPage('Characters')}, [])
+  
   // const [url1, setUrl1] = useState()
   // const { data: characters, isLoading, error } = useFetch(url1, headers)
 
@@ -48,6 +56,7 @@ const Characters = () => {
   //     setUrl1('https://jsonplaceholder.typicode.com/posts/9')
   // }
 
+  // 
   return (
     <div className='characters'>
       <div className='card-character'>
