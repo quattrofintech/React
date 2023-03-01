@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Card = ({ titulo, subTitulo, texto, url }) => {
+const Card = ({ titulo, subTitulo, texto, url, endpoint }) => {
     const number = url.split('/')[5]
     return (
-        <Link to={`/person/${number}`} className='card-item'>
+        <Link to={`/${endpoint}/${number}`} className='card-item'>
             <div>
                 <p className='title'>{titulo}</p>
                 <p className='subTitle'>{subTitulo}</p>
