@@ -37,15 +37,14 @@ const People = () => {
 
   return (
     <main>
-      <h1>People</h1>
-      <article>
+      <article className='container-center'>
         {
           people.map((item, i) => (
             <Card key={`${item.name}${i}`} titulo={item.name} url={item.url} endpoint='person' />
           ))
         }
       </article>
-      <section>
+      <section className='page-buttons'>
         {
           previous && <button onClick={() => button(0)}>⬅️</button>
         }

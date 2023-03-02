@@ -74,6 +74,37 @@ a {
   border-radius: 8px;
   scroll-snap-align: start;
   user-select: none;
-  background-color: lightblue;
+  background-color: rgba(211, 211, 211, 0.398);
   cursor: pointer;
+}
+
+.item {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 20px;
+  user-select: none;
+  background-color: rgba(211, 211, 211, 0.398);
+  cursor: pointer;
+}
+
+.container-center {
+  width: 90%;
+  margin: auto;
+}
+
+.page-buttons {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.page-buttons button{
+  font-size: 1.5em;
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: auto 10px;
 }

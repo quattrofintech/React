@@ -34,14 +34,14 @@ const Planets = () => {
 
     return (
         <main>
-            <article>
+            <article className='container-center'>
                 {
                     planets.map((item, i) => (
                         <Card key={`${item.name}${i}`} titulo={item.name} url={item.url} endpoint='planet' />
                     ))
                 }
             </article>
-            <section>
+            <section className='page-buttons'>
                 {
                     previous && <button onClick={() => button(0)}>⬅️</button>
                 }
