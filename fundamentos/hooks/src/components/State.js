@@ -4,17 +4,17 @@ const State = () => {
     let cont = 0
     const nome = 'Utilizando uma variavel padrão sem alteração de estado'
     const [contador, setContador ] = useState(0)
+   
 
     return(
         <div>
-            <h2>useState</h2>
             <div>
                 <h3>Sem Estado</h3>
                 {nome}
                 <br />
                 {cont}
                 <br />
-                <button onClick={() => cont += 1}>Contaodor</button>
+                <button onClick={() => cont += 1}>Contador</button>
             </div>
 
             <div>
