@@ -1,0 +1,92 @@
+main {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.1);
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* POST */
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.post {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+}
+
+div.post header {
+    width: 100%;
+    height: 70px;
+    margin: 5px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+}
+
+div.post header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+
+div.post .date{
+    position: relative;
+    width: auto;
+    margin: auto;
+    float: right;
+    right: 10%;
+    font-size: 0.8em;
+}
+
+div.post .img{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+div.post .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.post .text{
+    width: 80%;
+    margin: auto;
+}
+
+div.post .text p{
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+div.post footer{
+    width: 80%;
+    margin: auto;
+}
+
+div.post footer .icon{
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+div.post footer .icon:hover{
+    filter: grayscale(0);
+}
+
+div.post footer .likes{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+

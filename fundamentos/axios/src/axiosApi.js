@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-    baseURL: 'https://pokeapi.co/api/v2/',
+    baseURL: 'https://api-burb.onrender.com/api/',
+    // baseURL: 'https://pokeapi.co/api/v2/',
 })
 
 export default axiosInstance
